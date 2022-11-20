@@ -52,19 +52,16 @@ function remove_allumette(){
     } else{
         jeu=!jeu;
         if (jeu==true) {
-            console.log(joueur1.name, 'joue')
             turn.innerHTML="Joueur 1 joue"
         }else{
-            console.log(joueur2.name, 'joue')
             turn.innerHTML="Joueur 2 joue"
         }
         
-        for (var x = nbr_removed-1; x >= 0; x--) {
+        
+        for (var x = nbr_removed; x >= 0; x--) {
             allumette_container.removeChild(allumette_container.childNodes[x]);
         }
         nb=nb-nbr_removed;
-        console.log(nb)
-        console.log(nbr_removed)
     }
 
     var nbr_removed = document.getElementById("nbr_removed").value="";
