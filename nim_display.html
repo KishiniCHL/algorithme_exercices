@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Veuillez entrer un nombre d'allumette : </label>
+    <input type="text" id="nb" name="nb" value = ''/>
+    <button type="button" onclick="return_value()">Debut </button>
+    <p id="who_plays"></p>
+    <!-- <button type="button" onclick="enlever()">Enlever</button>
+    <input type='text' id='remove_allum' name='remove_allum' value=''/>
+    <label> allumette(s)</label> -->
+    <div id="container">
+
+    </div>
+
+
+    <div id="hide">
+        <div id="allumette"></div>
+    </div>
+    <section id="alumette_container">
+        
+    </section>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #hide{
+            visibility: hidden;
+        }
+
+        #allumette{
+            border-bottom: 0.5rem solid rgb(226, 132, 24);
+            width: 10rem;
+            margin: 1rem;
+        }
+    </style>
+    <script type="text/javascript" src="exo_nim.js"></script>
+</body>
+</html>
