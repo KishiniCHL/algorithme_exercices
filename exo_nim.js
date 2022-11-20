@@ -11,8 +11,9 @@ let joueur2 = new player('Joueur 2', false)
 let nb=0;
 var jeu=true
 var container = document.querySelector('#container')
-var allumette_container = document.querySelector('#alumette_container')
-var turn = document.querySelector('#who_plays')
+let allumette_container = document.querySelector('#alumette_container')
+let turn = document.querySelector('#who_plays')
+let left = document.querySelector('#left')
 
 function return_value(){
     for (let i = 0; i < nb; i++) {
@@ -66,6 +67,7 @@ function remove_allumette(){
         console.log(nb)
     }
 
+    left.innerHTML="Il reste "  + nb +" allumette(s)"
     var nbr_removed = document.querySelector("#nbr_removed").value="";
     
     if(nb===0){ 
