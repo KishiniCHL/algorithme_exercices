@@ -15,6 +15,10 @@ var allumette_container = document.querySelector('#alumette_container')
 var turn = document.querySelector('#who_plays')
 
 function return_value(){
+    for (let i = 0; i < nb; i++) {
+        //si on remet une valeur dans l'initialisation on reset avec la nouvelle valeur
+        allumette_container.removeChild(allumette_container.children[0]);    
+    }
     nb = document.querySelector("#nb").value;    
 
     if(nb<=3 || isNaN(nb)){
