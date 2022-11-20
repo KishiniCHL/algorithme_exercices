@@ -72,9 +72,9 @@ function remove_allumette(){
         turn.innerHTML=""
         jeu=!jeu;
         if (jeu==true) {
-            alert("Le joueur 1 gagne ! Rechargez la page pour jouer à nouveau");
+            alert("Le joueur 1 gagne ! Entrez une nouvelle valeur pour rejouer");
         }else{
-            alert("Le joueur 2 gagne ! Rechargez la page pour jouer à nouveau");
+            alert("Le joueur 2 gagne ! Entrez une nouvelle valeur pour rejouer");
         }
     }
 };
